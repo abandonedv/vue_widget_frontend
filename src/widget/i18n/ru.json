@@ -1,0 +1,27 @@
+{
+  "widget": {
+    "name": "Постановка задач",
+    "shortDescription": "Виджет постановки задач",
+    "description": "Виджет постановки задач"
+  },
+  "settings": {
+    "serverURL": "Адрес сервера"
+  },
+  "ui": {
+    "badRequest": "Что-то пошло не так, попробуйте позже",
+    "entities": {
+      "custom": "Автоматическое",
+      "lead": "Сделка",
+      "contact": "Контакт",
+      "company": "Компания"
+    },
+    "errors": {
+      "type_error.none.not_allowed": "обязательное поле",
+      "value_error.invalid": "недопустимое значение",
+      "value_error.duplicated": "повторяющееся значение"
+    }
+  },
+  "advanced": {
+    "title": "Постановка задач"
+  }
+}

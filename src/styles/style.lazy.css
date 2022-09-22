@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix box-sizing */
+*,
+::before,
+::after {
+  box-sizing: initial;
+}
+
+/* Fix font */
+body,
+html {
+  font: 15px "PT Sans", Arial, sans-serif;
+  color: #2e3640;
+}

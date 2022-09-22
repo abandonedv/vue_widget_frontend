@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Settings page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "PT Sans";
+        src: local("PT Sans"), url(fonts/PTS55F_W.woff) format("woff");
+      }
+
+      @font-face {
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: 700;
+        src: local("PT Sans Bold"), url(fonts/PTS75F_W.woff) format("woff");
+      }
+    </style>
+  </head>
+  <body class="bg-[#f5f5f5]">
+    <div class="flex min-h-screen">
+      <div class="w-[65px] flex-shrink-0 bg-[#1b3446]"></div>
+      <div class="w-[264px] flex-shrink-0 border-r border-solid border-[#e4e4e4] bg-white"></div>
+      <div class="min-w-[755px] flex-grow px-[25px] pt-0 pb-[85px]">
+        <div class="py-[12px] text-[18px] leading-[40px]">Постановка задач</div>
+        <div id="work_area"></div>
+      </div>
+    </div>
+    <script>
+      require(["mocks.js", "script.js"], function (mocks, widget) {
+        window.AMOCRM = mocks.amocrm;
+        widget = widget.bind(mocks.widget)();
+        widget.callbacks.advancedSettings();
+      });
+    </script>
+  </body>
+</html>
